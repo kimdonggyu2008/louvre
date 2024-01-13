@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    width:max-width 80% ;
+
+}
+.container .header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: black;
+}
+.container .header a{
+    text-decoration: none;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+
+}
+.container .header ul{
+    padding-top: 50px;
+    position:absolute;
+    left:33%;
+    top:10%;
+}
+.container .header ul li{
+    padding:30px;
+    float:left;
+}
+.container .nav ul li a:hover{
+    color:aqua;
+    transform:scale(1.1);
+    transition-duration:0.5s;
+    
+}
+
+.main{
+    width: max width 80%;
+    height:100vh;
+    background: url("../images/6e1a6078-2b54-403b-b23e-63690ff86069\ \(1\).png");
+    margin: 50px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+.column1{
+    position: absolute;
+    left: 15%;
+    top:30%;
+    color:white;
+    font-size: 30px;
+}
+.map{
+    position:absolute;
+    top: 80px;
+    width: 470px;
+}
+.column2{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+.title2{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+.clock{
+    font-size: 25px;
+    color: white;
+}
+.jusok{
+    font-size:14px;
+    color: white;
+}
+.par{
+    color:white;
+}
+.title{
+    position:absolute;
+    font-family: "Kalnia";
+    font-size: 40px;
+    left:47%;
+    top: 48%;
+    color:white;
+    background-color:transparent ;
+}
+.paragraph{
+    position:absolute;
+    font-size: 23px;
+    font-family: "Frank Ruhl Libre";
+    top:60%;
+    left: 47%;
+    text-align:left;
+    color:  white;
+    background-color: transparent;
+    line-height: 175%;
+}
+.overlay{
+    position:absolute;
+    top: 50%;
+    left:20%
+}
+.title3{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gridcontainer{
+    
+    z-index: 100;
+    row-gap: 50px;
+    display:grid;
+    place-items: center;
+    grid-template-areas: 'num1 num2 num3'
+                        ' num4 num5 num6';
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gridcontainer p{
+    font-size: 25px;
+}
+.num1{
+    grid-area: num1;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.num2{
+    grid-area: num2;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.num3{
+    grid-area: num3;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.num4{
+    grid-area: num4;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.num5{
+    grid-area: num5;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.num6{
+    grid-area: num6;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

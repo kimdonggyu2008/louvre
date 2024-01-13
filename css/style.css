@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+*{
+    MARGIN:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background:url("../images/Louvre.png");
+    
+}
+.container .header{
+    width:80%;
+    height:80px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    
+}
+.container .header .h1 a{
+    text-decoration: none;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+}
+.container .nav ul li{
+    display:inline-block;
+    margin:0 15px;
+}
+.container .nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.container .nav ul li a:hover{
+    color:aqua;
+
+    
+}
+.container .hero{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:whitesmoke;
+    text-align:center;
+    font-size:50px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+
+    
+}
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.container .hero p{
+    font-size:35px;
+}
+.container .hero .nav li{
+    font-size: 25px;
+
+}
+.container .hero .nav li:hover{
+    transform:scale(1.1);
+    transition-duration:0.5s;
+}
+
+.exhibition{
+    display:grid;
+    place-items: center;
+    grid-template-areas:'header aside    aside  '
+                        'header footer    bottom'
+                        'middle  footer   bottom'
+                        'middle    .       bottom';
+
+}   
+.mona{
+    font-family: "Neuton";
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    grid-area: header;
+}
+.mona a{
+    text-decoration: none;
+    color:inherit;
+}
+.mona img:hover{
+    transform:scale(1.05,1.05); 
+    transition-duration: 0.5s;
+}
+
+.gleaners{
+    font-family: "Playfair Display SC";
+    font-size: 50px;
+    grid-area:aside;
+    text-decoration: none;
+    color:inherit;
+}
+.gleaners a{
+    text-decoration: none;
+    color:inherit;
+}
+.gleaners img:hover{
+    transform:scale(1.05,1.05); 
+    transition-duration: 0.5s;
+}
+
+.venus{
+    font-family: "Neuton";
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    grid-area:bottom;
+    text-decoration: none;
+    color:inherit;
+}
+.venus a{
+    text-decoration: none;
+    color:inherit;
+}
+.venus img:hover{
+    transform:scale(1.05,1.05); 
+    transition-duration: 0.5s;
+}
+
+.nike{
+    font-family: "Frank Ruhl Libre";
+    font-size: 35px;
+    grid-area:footer;
+    text-decoration: none;
+    color:inherit;
+}
+.nike a{
+    text-decoration: none;
+    color:inherit;
+}
+.nike img:hover{
+    transform:scale(1.05,1.05); 
+    transition-duration: 0.5s;
+}
+
+.yosin{
+    font-family: "Playball";
+    font-size: 40px;
+    grid-area:middle;
+    text-decoration: none;
+    color:inherit;
+}
+.yosin a{
+    text-decoration: none;
+    color:inherit;
+}
+.yosin img:hover{
+    transform:scale(1.05,1.05); 
+    transition-duration: 0.5s;
+}

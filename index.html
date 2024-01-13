@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>루브르 박물관 홈페이지</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playball&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/favicon-16x16.png">
+        <script type="text/javascript">
+            var imgArray=new Array();
+            imgArray[0]="./images/Louvre.png";
+            imgArray[1]="./images/background2.jpg";
+
+            function showImage(){
+                var imgNum=Math.round(Math.random()*1);
+                var objImg=document.getElementById("introimg");
+                objImg.src=imgArray[imgNum];
+                setTimeout(showImage,10000);
+            }
+        </script>
+
+    </head>
+    <body onload="showImage()">
+        <div class="container">
+            <img id="introimg" >
+            <div class="header">
+                <h1><a href="index.html"><img class="logo" src="./images/Group.svg" alt="루브르 박물관 홈페이지"></a></h1>   
+            </div>
+            <div class="hero">
+                <h2>LOUVRE</h2>
+                <p>Paris, City of Art.</p>
+                <br>
+                <div class="nav">
+                    <ul>
+                        <li><a href="루브르박물관-인포.html">INFORMATION</a></li>
+                        <li><a href="루브르박물관-탐방.html">EXPLORE</a></li>
+                        <li><a href="루브르박물관-방문.html">VISIT</a></li>
+                    </ul>
+                </div>   
+             </div>
+        </div>
+        <br><br><br><br><br><br>
+        <main>
+            <section>
+                <div class="exhibition">
+                        <div class="mona">
+                            <a href="루브르박물관-모나리자.html"  ><img src="images\monalisa.jpg" style="width:400px"></a>
+                            <br>
+                            <p><a href="루브르박물관-모나리자.html"  >Mona Lisa</a></p>
+                            </div>
+                        <div class="gleaners">
+                            <a href="루브르박물관-이삭줍는.html"><img src="images\gleaners.jpg" style=" width:400px"></a>
+                                <br>
+                                <p><a href="루브르박물관-이삭줍는.html">The Gleaners</a></p>
+                            </div>
+                        <div class="venus">
+                            <a href="루브르박물관-비너스.html"><img src="images\venus.jpg" style=" width:350px"></a>
+                            <br>
+                            <p><a href="루브르박물관-비너스.html">Milo's Venus</a></p>
+                        </div>
+                        <div class="nike">
+                            <a href="루브르박물관-니케상.html"><img src="images\nike.png" style="width:350px"></a>
+                            <p><a href="루브르박물관-니케상.html">Nike of Smothrace</a></p>
+                            <br>
+                        </div>
+                        <div class="yosin">
+                            <p><a href="루브르박물관-여신.html">Liberty leading the people</a></p>
+                            <a href="루브르박물관-여신.html"><img src="images\yosin.jpg" style="width:350px"></a>
+                        </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

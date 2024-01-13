@@ -1,0 +1,83 @@
+@charset "UTF-8";
+*{
+                list-style:none;
+                text-decoration: none;
+                border-collapse: collapse;
+                margin:0px;
+                padding:0px;
+                color:black;
+                background-color: black;
+            }
+.container
+{
+    width:100%;
+    height:90vh;
+    background-image:url("../images/background.png") ;
+    position: relative;
+}
+.overlay{
+    position:absolute;
+    top: 15%;
+    left:20%
+}
+.overlay2{
+    position:absolute;
+    top: 25%;
+    left:18%
+}
+.title{
+    position:absolute;
+    font-family: "Kalnia";
+    font-size: 40px;
+    left:52%;
+    top:30%;
+    color:white;
+    text-align: center;
+    background-color:transparent ;
+}
+.paragraph{
+    position:absolute;
+    font-size: 21px;
+    font-family: "Frank Ruhl Libre";
+    top:40%;
+    left:52%;
+    text-align:left;
+    color:white;
+    background-color: transparent;
+    line-height: 175%;
+}
+.paragraph::first-letter{
+    font-family: "Kalnia";
+    font-size: 30px;
+}
+.header
+{
+    width:80%;
+    height: 90px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header .nav ul 
+{
+    width:80%;
+    height:80px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    height:80px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.header .nav ul li
+{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 90px;
+   
+}
+.header .nav ul li a
+{
+    color: white;
+}
